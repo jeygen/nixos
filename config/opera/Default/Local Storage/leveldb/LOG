@@ -1,9 +1,0 @@
-2024/09/08-22:03:42.462 4 Reusing MANIFEST /home/josh/.config/opera/Default/Local Storage/leveldb/MANIFEST-000001
-2024/09/08-22:03:42.469 4 Recovering log #3
-2024/09/08-22:03:42.469 4 Reusing old log /home/josh/.config/opera/Default/Local Storage/leveldb/000003.log 
-2024/09/08-22:04:30.313 6 Level-0 table #5: started
-2024/09/08-22:04:30.328 6 Level-0 table #5: 194104 bytes OK
-2024/09/08-22:04:30.331 6 Delete type=0 #3
-2024/09/08-22:04:43.693 6 Level-0 table #7: started
-2024/09/08-22:04:43.719 6 Level-0 table #7: 558717 bytes OK
-2024/09/08-22:04:43.724 6 Delete type=0 #4
