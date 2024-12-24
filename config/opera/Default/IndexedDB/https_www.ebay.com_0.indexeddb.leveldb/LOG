@@ -1,0 +1,6 @@
+2024/09/08-21:52:15.344 361c Creating DB /home/josh/.config/opera/Default/IndexedDB/https_www.ebay.com_0.indexeddb.leveldb since it was missing.
+2024/09/08-21:52:15.346 361c Reusing MANIFEST /home/josh/.config/opera/Default/IndexedDB/https_www.ebay.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/08-21:52:16.216 361c Level-0 table #5: started
+2024/09/08-21:52:16.217 361c Level-0 table #5: 3894 bytes OK
+2024/09/08-21:52:16.218 361c Delete type=0 #3
+2024/09/08-21:52:16.219 361c Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

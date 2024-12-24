@@ -1,0 +1,13 @@
+{
+	"torSettings": {
+		"running": false,
+		"host": "127.0.0.1",
+		"port": 34527
+	},
+	"winBounds": {
+		"x": 2,
+		"y": 28,
+		"width": 1916,
+		"height": 1018
+	}
+}

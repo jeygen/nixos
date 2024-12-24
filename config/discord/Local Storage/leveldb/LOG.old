@@ -1,0 +1,32 @@
+2024/11/21-10:29:50.010 b24 Reusing MANIFEST /home/josh/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/11/21-10:29:50.019 b24 Recovering log #681
+2024/11/21-10:29:50.019 b24 Reusing old log /home/josh/.config/discord/Local Storage/leveldb/000681.log 
+2024/11/21-10:31:00.188 b25 Level-0 table #687: started
+2024/11/21-10:31:00.198 b25 Level-0 table #687: 37668 bytes OK
+2024/11/21-10:31:00.199 b25 Delete type=0 #681
+2024/11/21-10:45:11.763 b25 Level-0 table #689: started
+2024/11/21-10:45:11.783 b25 Level-0 table #689: 3282174 bytes OK
+2024/11/21-10:45:11.785 b25 Delete type=0 #686
+2024/11/21-17:02:04.709 b25 Level-0 table #691: started
+2024/11/21-17:02:04.718 b25 Level-0 table #691: 55158 bytes OK
+2024/11/21-17:02:04.719 b25 Delete type=0 #688
+2024/11/21-18:32:04.708 b25 Level-0 table #693: started
+2024/11/21-18:32:04.722 b25 Level-0 table #693: 2445464 bytes OK
+2024/11/21-18:32:04.724 b25 Delete type=0 #690
+2024/11/21-18:32:04.724 b25 Compacting 4@0 + 2@1 files
+2024/11/21-18:32:04.733 b25 Generated table #694@0: 16 keys, 2431930 bytes
+2024/11/21-18:32:04.752 b25 Generated table #695@0: 109 keys, 3284433 bytes
+2024/11/21-18:32:04.752 b25 Compacted 4@0 + 2@1 files => 5716363 bytes
+2024/11/21-18:32:04.753 b25 compacted to: files[ 0 3 1 0 0 0 0 ]
+2024/11/21-18:32:04.754 b25 Delete type=2 #684
+2024/11/21-18:32:04.754 b25 Delete type=2 #689
+2024/11/21-18:32:04.754 b25 Delete type=2 #687
+2024/11/21-18:32:04.754 b25 Delete type=2 #683
+2024/11/21-18:32:04.754 b25 Delete type=2 #691
+2024/11/21-18:32:04.754 b25 Delete type=2 #693
+2024/11/22-02:30:15.863 b25 Level-0 table #697: started
+2024/11/22-02:30:15.872 b25 Level-0 table #697: 42732 bytes OK
+2024/11/22-02:30:15.873 b25 Delete type=0 #692
+2024/11/22-04:30:26.397 b25 Level-0 table #699: started
+2024/11/22-04:30:26.411 b25 Level-0 table #699: 2430481 bytes OK
+2024/11/22-04:30:26.412 b25 Delete type=0 #696

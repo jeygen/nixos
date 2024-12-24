@@ -1,0 +1,729 @@
+[2024-11-21 10:30:01.264] [2993] (engine.cpp:506): Created native Engine, time: Thu Nov 21 10:30:01 2024 EST, logPath: /home/josh/.config/discord/0.0.73/modules/discord_voice/, logLevel: 2
+[2024-11-21 10:30:01.264] [2993] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-11-21 10:30:01.264] [2993] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-11-21 10:30:01.264] [2993] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-11-21 10:30:01.264] [2993] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-11-21 10:30:01.264] [2993] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:143): current platform is Linux
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:354): ActiveAudioLayer
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:143): current platform is Linux
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-11-21 10:30:01.264] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-11-21 10:30:01.264] [2993] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-11-21 10:30:01.264] [2993] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-11-21 10:30:01.264] [2993] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-11-21 10:30:01.264] [2993] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-11-21 10:30:01.264] [2993] (audio_engine.cpp:481): Creating audio engine: standard
+[2024-11-21 10:30:01.264] [2993] (audio_device_impl.cc:364): Init
+[2024-11-21 10:30:01.418] [2993] (audio_device_impl.cc:364): Init
+[2024-11-21 10:30:01.419] [2993] (audio_coding.cpp:156): Using software Opus decoder
+[2024-11-21 10:30:01.419] [2993] (audio_coding.cpp:173): Using software Opus encoder
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2024-11-21 10:30:01.419] [2993] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-11-21 10:30:01.419] [2993] (audio_engine.cpp:181): Setting audio input device: 'default'
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.419] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:573): output: 1
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.419] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.419] [2993] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-11-21 10:30:01.419] [2993] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-11-21 10:30:01.419] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 10:30:01.419] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 10:30:01.420] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 10:30:01.420] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 10:30:01.420] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 10:30:01.420] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 10:30:01.420] [2993] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2024-11-21 10:30:01.420] [2993] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2024-11-21 10:30:01.420] [2993] (audio_device_impl.cc:914): output: 0
+[2024-11-21 10:30:01.420] [2993] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-11-21 10:30:01.420] [2993] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-11-21 10:30:01.420] [2993] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-11-21 10:30:01.420] [2993] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-11-21 10:30:01.420] [2993] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-11-21 10:30:01.420] [2993] (clipping_predictor.cc:358): [AGC2] Clipping prediction disabled.
+[2024-11-21 10:30:01.420] [2993] (agc_manager_direct.cc:481): [agc] analog controller enabled: yes
+[2024-11-21 10:30:01.420] [2993] (agc_manager_direct.cc:484): [agc] Min mic level: 12 (overridden: no)
+[2024-11-21 10:30:01.420] [2993] (captured_audio_processor.cpp:127): SetNoiseCancellation: 0
+[2024-11-21 10:30:01.420] [2993] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-11-21 10:30:01.420] [2993] (field_trial.cc:164): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2024-11-21 10:30:01.421] [2993] (audio_engine.cpp:181): Setting audio input device: 'default'
+[2024-11-21 10:30:01.421] [2993] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-11-21 10:30:01.421] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.421] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.421] [2993] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-11-21 10:30:01.421] [2993] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:573): output: 1
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.422] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.422] [2993] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-11-21 10:30:01.422] [2993] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-11-21 10:30:01.422] [2993] (audio_engine.cpp:198): Setting audio output device: 'Family 17h/19h HD Audio Controller Headphones'
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:720): SetPlayoutDevice
+[2024-11-21 10:30:01.422] [2993] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 10:30:01.422] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 10:30:01.422] [2993] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-11-21 10:30:01.422] [2993] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-11-21 10:30:01.422] [2993] (engine_audio_transport.cpp:547): EngineAudioTransport::SetSidechainCompression 0
+[2024-11-21 10:30:01.422] [2993] (engine_audio_transport.cpp:558): EngineAudioTransport::ApplySidechainCompressionSettings  threshold: -32.5 ratio: 0.433333
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 10:30:01.422] [2993] (audio_engine.cpp:181): Setting audio input device: 'default'
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.422] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:573): output: 1
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.422] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.422] [2993] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-11-21 10:30:01.422] [2993] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-11-21 10:30:01.422] [2993] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 10:30:01.422] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 10:30:01.438] [2993] (audio_engine.cpp:181): Setting audio input device: 'default'
+[2024-11-21 10:30:01.438] [2993] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-11-21 10:30:01.438] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.438] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.438] [2993] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:573): output: 1
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.439] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.439] [2993] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-11-21 10:30:01.439] [2993] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-11-21 10:30:01.439] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 10:30:01.439] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 10:30:01.439] [2993] (audio_engine.cpp:181): Setting audio input device: 'default'
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.439] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-11-21 10:30:01.439] [2993] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-11-21 10:30:01.440] [2993] (audio_device_impl.cc:573): output: 1
+[2024-11-21 10:30:01.440] [2993] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-11-21 10:30:01.440] [2993] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-11-21 10:30:01.440] [2993] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-11-21 10:30:01.440] [2993] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-11-21 10:30:01.440] [2993] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-11-21 10:30:01.440] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 10:30:01.440] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 10:30:01.440] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 10:30:01.440] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 10:30:01.440] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 10:30:01.440] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 10:30:01.440] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 10:30:06.552] [2969] JS console: [MediaEngineStore] Failed to load Krisp module: Failed to setup Krisp module, error code: -3
+[2024-11-21 10:30:06.747] [2969] JS console: [GatewaySocket] [FAST CONNECT] successfully took over websocket, state:
+[2024-11-21 10:30:06.748] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 1 ms
+[2024-11-21 10:30:07.684] [2969] JS console: [GatewaySocket] [READY] took 937ms, as eb5955fca6dfd72e20ae05a5c993f77f
+[2024-11-21 10:30:07.811] [2969] JS console: [GatewaySocket] [READY_SUPPLEMENTAL] took 1064ms
+[2024-11-21 10:30:18.196] [3462] (region_latency_tester.cpp:72): Sending 5 latency test pings to region newark
+[2024-11-21 10:30:18.196] [3462] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-east
+[2024-11-21 10:30:18.197] [3462] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2024-11-21 10:30:18.197] [3462] (region_latency_tester.cpp:72): Sending 5 latency test pings to region atlanta
+[2024-11-21 10:30:18.197] [3462] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2024-11-21 10:30:18.265] [3462] (region_latency_tester.cpp:283): Average RTT for region newark is 31
+[2024-11-21 10:30:18.265] [3462] (region_latency_tester.cpp:283): Average RTT for region us-east is 37.5
+[2024-11-21 10:30:18.265] [3462] (region_latency_tester.cpp:283): Average RTT for region us-central is 32
+[2024-11-21 10:30:18.265] [3462] (region_latency_tester.cpp:283): Average RTT for region atlanta is 48
+[2024-11-21 10:30:18.265] [3462] (region_latency_tester.cpp:283): Average RTT for region us-south is 63.25
+[2024-11-21 11:25:38.427] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 11:25:38.568] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 141 ms
+[2024-11-21 11:25:38.569] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 2059
+[2024-11-21 11:25:38.684] [2969] JS console: [GatewaySocket] [RESUMED] took 257ms, replayed 0 events, new seq: 2060
+[2024-11-21 12:06:11.212] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 12:06:11.212] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 12:06:11.212] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 12:06:11.212] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 12:06:11.212] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 12:06:11.212] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 12:06:11.212] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-21 12:06:11.212] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-21 12:06:11.213] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 12:06:11.213] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 12:06:11.213] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 12:06:11.214] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 12:06:11.214] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 12:06:11.214] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 12:06:11.214] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 12:21:26.753] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 12:21:26.753] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 12:21:26.753] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 12:21:26.753] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 12:21:26.753] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 12:21:26.753] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 12:21:26.753] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 12:21:26.753] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 12:21:26.753] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 12:21:26.753] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 12:21:26.753] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 12:21:26.753] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 12:21:26.753] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 12:21:26.753] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 12:21:26.753] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 12:21:26.780] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 12:21:26.780] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 12:21:26.780] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 12:21:26.781] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 12:21:26.781] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 12:21:26.781] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 12:21:26.781] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 14:55:21.952] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 14:55:22.102] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 150 ms
+[2024-11-21 14:55:22.103] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 10703
+[2024-11-21 14:55:22.707] [2969] JS console: [GatewaySocket] [RESUMED] took 755ms, replayed 0 events, new seq: 10704
+[2024-11-21 15:46:41.035] [2969] JS console: [GatewaySocket] [WS CLOSED] (false, 1006, ) retrying in 2.27 seconds.
+[2024-11-21 15:46:43.702] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 15:46:43.861] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 159 ms
+[2024-11-21 15:46:43.861] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 12867
+[2024-11-21 15:46:44.706] [2969] JS console: [GatewaySocket] [RESUMED] took 1004ms, replayed 0 events, new seq: 12869
+[2024-11-21 16:30:18.851] [7933] (region_latency_tester.cpp:72): Sending 5 latency test pings to region newark
+[2024-11-21 16:30:18.851] [7933] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-east
+[2024-11-21 16:30:18.851] [7933] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2024-11-21 16:30:18.851] [7933] (region_latency_tester.cpp:72): Sending 5 latency test pings to region atlanta
+[2024-11-21 16:30:18.851] [7933] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2024-11-21 16:30:18.920] [7933] (region_latency_tester.cpp:283): Average RTT for region newark is 32
+[2024-11-21 16:30:18.921] [7933] (region_latency_tester.cpp:283): Average RTT for region us-east is 37
+[2024-11-21 16:30:18.921] [7933] (region_latency_tester.cpp:283): Average RTT for region us-central is 32.5
+[2024-11-21 16:30:18.921] [7933] (region_latency_tester.cpp:283): Average RTT for region atlanta is 49.25
+[2024-11-21 16:30:18.921] [7933] (region_latency_tester.cpp:283): Average RTT for region us-south is 63.75
+[2024-11-21 17:01:55.400] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:01:55.400] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:01:55.400] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:01:55.400] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:01:55.400] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:01:55.400] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:01:55.400] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-21 17:01:55.400] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-21 17:01:55.428] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:01:55.428] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:01:55.428] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:01:55.429] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:01:55.429] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:01:55.429] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:01:55.429] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:12:04.413] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:12:04.413] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:12:04.413] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:12:04.413] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:12:04.413] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:12:04.413] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:12:04.413] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:12:04.413] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 17:12:04.413] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 17:12:04.413] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:12:04.413] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 17:12:04.413] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:12:04.413] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 17:12:04.413] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:12:04.413] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:12:04.413] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:12:04.414] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:12:04.414] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:12:04.414] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:12:04.414] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:12:04.414] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:12:04.414] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:15:01.708] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:15:01.708] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:15:01.708] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:15:01.708] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:15:01.708] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:15:01.708] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:15:01.708] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-21 17:15:01.708] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-21 17:15:01.718] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:15:01.718] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:15:01.718] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:15:01.718] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:15:01.718] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:15:01.718] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:15:01.718] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:25:47.774] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:25:47.774] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:25:47.774] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:25:47.774] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:25:47.774] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:25:47.774] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:25:47.774] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:25:47.774] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 17:25:47.774] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 17:25:47.774] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:25:47.774] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 17:25:47.774] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:25:47.774] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 17:25:47.774] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:25:47.774] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:25:47.775] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:25:47.775] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:25:47.775] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:25:47.775] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:25:47.775] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:25:47.775] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:25:47.775] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:36:20.809] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:36:20.809] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:36:20.809] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:36:20.809] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:36:20.809] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:36:20.809] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:36:20.809] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-21 17:36:20.809] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-21 17:36:20.810] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:36:20.810] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:36:20.810] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:36:20.810] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:36:20.810] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:36:20.810] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:36:20.810] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:46:21.838] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:46:21.838] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:46:21.838] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:46:21.838] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:46:21.838] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:46:21.838] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:46:21.838] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:46:21.838] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 17:46:21.838] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 17:46:21.838] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:46:21.838] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 17:46:21.838] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:46:21.838] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 17:46:21.838] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:46:21.838] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:46:21.838] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:46:21.838] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:46:21.838] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:46:21.838] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:46:21.839] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:46:21.839] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:46:21.839] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:49:40.165] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:49:40.165] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:49:40.165] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:49:40.165] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:49:40.165] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:49:40.165] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:49:40.165] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-21 17:49:40.165] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-21 17:49:40.166] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:49:40.166] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:49:40.166] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:49:40.166] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:49:40.166] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:49:40.166] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:49:40.166] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:51:18.030] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 17:51:18.186] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 156 ms
+[2024-11-21 17:51:18.187] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 17243
+[2024-11-21 17:51:18.305] [2969] JS console: [GatewaySocket] [RESUMED] took 275ms, replayed 0 events, new seq: 17244
+[2024-11-21 17:59:41.167] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:59:41.167] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 17:59:41.167] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 17:59:41.167] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 17:59:41.167] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:59:41.167] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 17:59:41.167] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 17:59:41.167] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 17:59:41.167] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:59:41.167] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 17:59:41.167] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 17:59:41.167] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 17:59:41.167] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 18:06:33.557] [2969] JS console: [GatewaySocket] [WS CLOSED] (false, 1006, ) retrying in 1.82 seconds.
+[2024-11-21 18:06:35.376] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 18:06:35.529] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 153 ms
+[2024-11-21 18:06:35.529] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 17773
+[2024-11-21 18:06:35.636] [2969] JS console: [GatewaySocket] [RESUMED] took 260ms, replayed 0 events, new seq: 17774
+[2024-11-21 18:34:46.668] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 18:34:46.668] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 18:34:46.668] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 18:34:46.668] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 18:34:46.668] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 18:34:46.668] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 18:34:46.668] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-21 18:34:46.668] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-21 18:34:46.668] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 18:34:46.668] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 18:34:46.668] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 18:34:46.669] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 18:34:46.669] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 18:34:46.669] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 18:34:46.669] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 19:27:32.889] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 19:27:33.025] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 136 ms
+[2024-11-21 19:27:33.025] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 20759
+[2024-11-21 19:27:33.707] [2969] JS console: [GatewaySocket] [RESUMED] took 818ms, replayed 0 events, new seq: 20760
+[2024-11-21 20:47:52.719] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 20:47:52.719] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 20:47:52.719] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 20:47:52.719] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 20:47:52.719] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 20:47:52.719] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 20:47:52.719] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 20:47:52.719] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 20:47:52.719] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 20:47:52.719] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 20:47:52.719] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 20:47:52.719] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 20:47:52.719] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 20:47:52.719] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 20:47:52.719] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 20:47:52.747] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 20:47:52.747] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 20:47:52.747] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 20:47:52.747] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 20:47:52.747] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 20:47:52.747] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 20:47:52.747] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 21:01:41.105] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 21:01:41.105] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 21:01:41.105] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 21:01:41.105] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 21:01:41.105] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 21:01:41.105] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 21:01:41.105] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-21 21:01:41.105] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-21 21:01:41.106] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 21:01:41.106] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 21:01:41.106] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 21:01:41.106] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 21:01:41.106] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 21:01:41.106] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 21:01:41.106] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 21:56:37.025] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 21:56:37.186] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 161 ms
+[2024-11-21 21:56:37.186] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 24848
+[2024-11-21 21:56:37.702] [2969] JS console: [GatewaySocket] [RESUMED] took 677ms, replayed 0 events, new seq: 24849
+[2024-11-21 22:13:40.600] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 22:13:40.600] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 22:13:40.600] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 22:13:40.600] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 22:13:40.600] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 22:13:40.600] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 22:13:40.600] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 22:13:40.600] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 22:13:40.600] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 22:13:40.600] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 22:13:40.600] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 22:13:40.600] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 22:13:40.600] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 22:13:40.600] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 22:13:40.600] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 22:13:40.627] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 22:13:40.627] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 22:13:40.627] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 22:13:40.627] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 22:13:40.627] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 22:13:40.627] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 22:13:40.627] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 22:30:19.837] [16532] (region_latency_tester.cpp:72): Sending 5 latency test pings to region newark
+[2024-11-21 22:30:19.837] [16532] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-east
+[2024-11-21 22:30:19.837] [16532] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2024-11-21 22:30:19.837] [16532] (region_latency_tester.cpp:72): Sending 5 latency test pings to region atlanta
+[2024-11-21 22:30:19.837] [16532] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2024-11-21 22:30:19.899] [16532] (region_latency_tester.cpp:283): Average RTT for region newark is 36.25
+[2024-11-21 22:30:19.899] [16532] (region_latency_tester.cpp:283): Average RTT for region us-east is 39
+[2024-11-21 22:30:19.899] [16532] (region_latency_tester.cpp:283): Average RTT for region us-central is 35
+[2024-11-21 22:30:19.899] [16532] (region_latency_tester.cpp:283): Average RTT for region atlanta is 50
+[2024-11-21 22:30:19.899] [16532] (region_latency_tester.cpp:283): Average RTT for region us-south is 59.5
+[2024-11-21 22:33:27.519] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 22:33:27.519] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 22:33:27.519] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 22:33:27.519] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 22:33:27.519] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 22:33:27.519] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 22:33:27.519] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-21 22:33:27.519] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-21 22:33:27.520] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 22:33:27.520] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 22:33:27.520] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 22:33:27.520] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 22:33:27.520] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 22:33:27.520] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 22:33:27.520] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 22:43:30.509] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 22:43:30.509] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 22:43:30.509] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 22:43:30.509] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 22:43:30.510] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 22:43:30.510] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 22:43:30.510] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 22:43:30.510] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-21 22:43:30.510] [2993] (engine.cpp:221): * audioInput:
+[2024-11-21 22:43:30.510] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 22:43:30.510] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-21 22:43:30.510] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-21 22:43:30.510] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-21 22:43:30.510] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 22:43:30.510] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-21 22:43:30.510] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-21 22:43:30.510] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-21 22:43:30.510] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-21 22:43:30.510] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-21 22:43:30.510] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-21 22:43:30.510] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-21 22:43:30.510] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-21 22:54:17.606] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 22:54:17.747] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 141 ms
+[2024-11-21 22:54:17.748] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 26364
+[2024-11-21 22:54:18.703] [2969] JS console: [GatewaySocket] [RESUMED] took 1096ms, replayed 0 events, new seq: 26365
+[2024-11-21 23:37:03.339] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-21 23:37:03.490] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 150 ms
+[2024-11-21 23:37:03.490] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 27711
+[2024-11-21 23:37:03.706] [2969] JS console: [GatewaySocket] [RESUMED] took 367ms, replayed 0 events, new seq: 27712
+[2024-11-22 01:43:18.204] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-22 01:43:18.349] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 145 ms
+[2024-11-22 01:43:18.349] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 30598
+[2024-11-22 01:43:18.707] [2969] JS console: [GatewaySocket] [RESUMED] took 503ms, replayed 0 events, new seq: 30599
+[2024-11-22 03:18:50.209] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-22 03:18:50.358] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 148 ms
+[2024-11-22 03:18:50.358] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 31942
+[2024-11-22 03:18:50.703] [2969] JS console: [GatewaySocket] [RESUMED] took 493ms, replayed 0 events, new seq: 31943
+[2024-11-22 04:30:20.834] [24030] (region_latency_tester.cpp:72): Sending 5 latency test pings to region newark
+[2024-11-22 04:30:20.834] [24030] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-east
+[2024-11-22 04:30:20.834] [24030] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2024-11-22 04:30:20.834] [24030] (region_latency_tester.cpp:72): Sending 5 latency test pings to region atlanta
+[2024-11-22 04:30:20.834] [24030] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2024-11-22 04:30:20.892] [24030] (region_latency_tester.cpp:283): Average RTT for region newark is 31.25
+[2024-11-22 04:30:20.892] [24030] (region_latency_tester.cpp:283): Average RTT for region us-east is 37.5
+[2024-11-22 04:30:20.892] [24030] (region_latency_tester.cpp:283): Average RTT for region us-central is 32.25
+[2024-11-22 04:30:20.892] [24030] (region_latency_tester.cpp:283): Average RTT for region atlanta is 48
+[2024-11-22 04:30:20.892] [24030] (region_latency_tester.cpp:283): Average RTT for region us-south is 56.75
+[2024-11-22 05:31:51.076] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-22 05:31:51.223] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 147 ms
+[2024-11-22 05:31:51.224] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 33495
+[2024-11-22 05:31:51.703] [2969] JS console: [GatewaySocket] [RESUMED] took 627ms, replayed 0 events, new seq: 33496
+[2024-11-22 06:24:26.019] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-22 06:24:26.167] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 148 ms
+[2024-11-22 06:24:26.168] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 33932
+[2024-11-22 06:24:26.703] [2969] JS console: [GatewaySocket] [RESUMED] took 684ms, replayed 0 events, new seq: 33933
+[2024-11-22 07:01:01.806] [2969] JS console: [GatewaySocket] [WS CLOSED] (false, 1006, ) retrying in 1.00 seconds.
+[2024-11-22 07:01:03.702] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-22 07:01:03.863] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 161 ms
+[2024-11-22 07:01:03.863] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 34301
+[2024-11-22 07:01:04.707] [2969] JS console: [GatewaySocket] [RESUMED] took 1005ms, replayed 0 events, new seq: 34303
+[2024-11-22 07:22:01.638] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-22 07:22:01.786] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 148 ms
+[2024-11-22 07:22:01.787] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 34701
+[2024-11-22 07:22:02.706] [2969] JS console: [GatewaySocket] [RESUMED] took 1068ms, replayed 0 events, new seq: 34702
+[2024-11-22 07:50:22.904] [2969] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-11-22 07:50:23.038] [2969] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 134 ms
+[2024-11-22 07:50:23.038] [2969] JS console: [GatewaySocket] [RESUME] resuming session eb5955fca6dfd72e20ae05a5c993f77f, seq: 35125
+[2024-11-22 07:50:23.703] [2969] JS console: [GatewaySocket] [RESUMED] took 799ms, replayed 0 events, new seq: 35126
+[2024-11-22 08:52:58.177] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-22 08:52:58.177] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-22 08:52:58.177] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-22 08:52:58.177] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-22 08:52:58.177] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-22 08:52:58.177] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-22 08:52:58.177] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:221): * audioInput:
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-22 08:52:58.177] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-22 08:52:58.203] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-22 08:52:58.203] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-22 08:52:58.203] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-22 08:52:58.204] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-22 08:52:58.204] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-22 08:52:58.204] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-22 08:52:58.204] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-22 09:03:06.132] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-22 09:03:06.132] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-22 09:03:06.132] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-22 09:03:06.132] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-22 09:03:06.132] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-22 09:03:06.132] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-22 09:03:06.132] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-22 09:03:06.132] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-22 09:03:06.132] [2993] (engine.cpp:221): * audioInput:
+[2024-11-22 09:03:06.132] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-22 09:03:06.132] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-22 09:03:06.132] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-22 09:03:06.132] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-22 09:03:06.132] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-22 09:03:06.132] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-22 09:03:06.157] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-22 09:03:06.157] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-22 09:03:06.157] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-22 09:03:06.158] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-22 09:03:06.158] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-22 09:03:06.158] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-22 09:03:06.158] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-22 09:14:29.208] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-22 09:14:29.208] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-22 09:14:29.208] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-22 09:14:29.208] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-22 09:14:29.208] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-22 09:14:29.208] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-22 09:14:29.208] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:220): *** OnDevicesChanged:
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:221): * audioInput:
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:224): - default: Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Headphones Stereo Microphone ()
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:224): - Family 17h/19h HD Audio Controller Digital Microphone ()
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:226): * audioOutput:
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:229): - default: Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:229): - Family 17h/19h HD Audio Controller Speaker ()
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-11-22 09:14:29.208] [2993] (engine.cpp:229): - Rembrandt Radeon High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-11-22 09:14:29.209] [2993] (audio_engine.cpp:198): Setting audio output device: 'default'
+[2024-11-22 09:14:29.209] [2993] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-11-22 09:14:29.209] [2993] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-11-22 09:14:29.209] [2993] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-11-22 09:14:29.209] [2993] (audio_device_impl.cc:619): output: 1
+[2024-11-22 09:14:29.209] [2993] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-11-22 09:14:29.209] [2993] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
